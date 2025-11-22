@@ -1,0 +1,31 @@
+# FastAPI framework for building the API
+# FastAPI ka use hum API banane ke liye karte hain kyunki ye fast aur easy hai.
+fastapi==0.109.0
+
+# ASGI server to run the application
+# Uvicorn hamare FastAPI app ko run karne ke liye server hai.
+uvicorn==0.27.0
+
+# Database ORM (Object Relational Mapper)
+# SQLModel database se interact karne ke liye use hota hai (tables banana, data save karna).
+sqlmodel==0.0.14
+
+# PostgreSQL adapter
+# Ye library Python ko PostgreSQL database se baat karne deti hai.
+psycopg2-binary==2.9.9
+
+# For password hashing
+# Passwords ko secure rakhne ke liye unhe hash (encrypt) karna padta hai.
+passlib[bcrypt]==1.7.4
+
+# For JWT authentication
+# Login ke baad user ko pehchanne ke liye JWT tokens ka use hota hai.
+python-jose[cryptography]==3.3.0
+
+# For handling file uploads (multipart/form-data)
+# Product images upload karne ke liye ye zaroori hai.
+python-multipart==0.0.6
+
+# For reading .env files
+# Environment variables (jaise DB password) ko file se padhne ke liye.
+python-dotenv==1.0.1
