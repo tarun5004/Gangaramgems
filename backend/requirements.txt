@@ -29,3 +29,18 @@ python-multipart==0.0.6
 # For reading .env files
 # Environment variables (jaise DB password) ko file se padhne ke liye.
 python-dotenv==1.0.1
+
+# AWS SDK for Python
+# S3 bucket mein images upload karne ke liye humein AWS ki library chahiye.
+boto3==1.34.0
+
+# Database Migrations
+# Database tables ko manage karne ke liye (create/update tables).
+alembic==1.13.1
+
+# Pydantic Settings
+# Environment variables load karne ke liye.
+pydantic-settings==2.1.0
+
+
+

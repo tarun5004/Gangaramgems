@@ -25,10 +25,18 @@ class Settings(BaseSettings):
     # Public configuration ke liye WhatsApp number.
     WHATSAPP_NUMBER: str
 
+    # AWS Configuration
+    AWS_ACCESS_KEY_ID: str
+    AWS_SECRET_ACCESS_KEY: str
+    AWS_REGION: str
+    AWS_BUCKET_NAME: str
+
     # Configuration class to tell Pydantic where to find the .env file
     # Ye batata hai ki values ".env" file se padhni hain.
     class Config:
         env_file = ".env"
+        extra = "ignore" # Ignore extra fields in .env if any
+
 
 # Create an instance of Settings
 # Is object ko hum poori app mein use karenge settings access karne ke liye.
